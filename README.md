@@ -1,5 +1,5 @@
 # Selection Bias in News Coverage: Learning it, Fighting it
-by Dylan Bourgeois, Jérémie Rappaz, Karl Aberrer
+by Dylan Bourgeois, Jérémie Rappaz, Karl Aberer
 
 > Accepted for oral presentation at the Alternate Track on  Journalism, Misinformation, and Fact-checking at The Web Conference 2018.
 
