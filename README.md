@@ -5,7 +5,7 @@ by Dylan Bourgeois, Jérémie Rappaz, Karl Aberer
 
 ## Context
 
-This post aims to support our work on selection bias in the context of news coverage. The paper can be found here [TODO]. We present the motivation for the project, and an interactive data visualisation of the learned relationships between news sources.
+This post aims to support our work on selection bias in the context of news coverage. The paper can be found <a target="_blank" href="selection-bias-final.pdf">here</a>, and the code is available on <a href="https://github.com/JRappaz/NewsXtract">Github</a>. We present the motivation for the project, and an interactive data visualisation of the learned relationships between news sources.
 
 ## Abstract
 
