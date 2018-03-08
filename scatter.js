@@ -258,6 +258,13 @@ function weekSelect(i) {
         });
     });
 
+    var tip = d3.tip()
+        .attr("class", "d3-tip")
+        .offset([-10, 0])
+        .html(function(d) {
+            return d[nameCat].replace('\'','');
+        });
+
     var prev = d3.select(".button-primary");
     prev.classed("button-primary", !prev.classed("button-primary"));
 
