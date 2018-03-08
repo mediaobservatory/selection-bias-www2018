@@ -1,7 +1,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Visualization</title>
+    <meta name="description" content="Supporting website for the paper 'Selection Bias in News Coverage: Learning it, Fighting it' presented at the Web Conference 2018">
+    <meta name="keywords" content="news, bias, www, paper, misinformation, journalism, ">
+    <meta name="author" content="Dylan Bourgeois, Jérémie Rappaz, Karl Aberer">
+    <title>Selection Bias in News Coverage: Learning it, Fighting it - WWW2018</title>
     <link rel="stylesheet" href="scatter.css" charset="utf-8">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
@@ -11,19 +14,18 @@
       <div class="container">
         <div class="row">
             <div class="one columns" >
-
             </div>
             <div class="twelve columns" style="margin-top: 5%">
                 <h5> <span class="docs-header">Selection Bias in News Coverage: Learning it, Fighting it </span>
-                <br /> <i>by Dylan Bourgeois, Jérémie Rappaz, Karl Aberer</i></h5>
+                <br /> <i>by Dylan Bourgeois<sup><a href='#fn1' id='ref1' style="text-decoration:none;"> 1</a></sup>, Jérémie Rappaz<sup><a href='#fn2' id='ref2' style="text-decoration:none;"> 2</a></sup>, Karl Aberer<sup><a href='#fn3' id='ref3' style="text-decoration:none;"> 3</a></sup></i></h5>
 
             </div>
 
             <div class="nine columns">
-                <pre><code>Accepted for oral presentation at the Alternate Track on <br /><em>Journalism, Misinformation</em>, and Fact-checking at <em>The Web Conference 2018</em>.</pre></code>
+                <pre><code>Accepted for oral presentation at the Alternate Track on <br /><em>Journalism, Misinformation, and Fact-checking</em> at The Web Conference 2018.</code></pre>
                 <p>
                     This post aims to support our work on selection bias in the context
-                    of news coverage. The paper can be found <a target="_blank" href="selection-bias-final.pdf">here</a>,
+                    of news coverage. The paper can be found <a target="_blank" href="selection-bias-final.pdf" style="">here</a> <code style="color:#2cafd9;">[.pdf, 1.8Mb]</code>,
                     and the code is available on <a href="https://github.com/JRappaz/NewsXtract">Github</a>.
                     We present the motivation for the project, and an interactive data visualisation of the
                     learned relationships between news sources.
@@ -68,17 +70,23 @@
                         </li>
                     </ul>
                 </p>
-
+            <h4>Figure: Source agglomerations in latent space</h4>
+            <p>
+                This figure presents a visualisation of learned low-dimensional representation
+                of the sources' selections in terms of coverage. We then apply an unsupervised
+                clustering algorithm to cluster the group by similarity in this space.
+            </p>
             </div>
+
         </div>
         <br />
 
-        <button class="button" style="border: none; pointer-events: none;">Choose a week:</button>
+        <!-- <button class="button" style="border: none; pointer-events: none;">Choose a week:</button>
         <button class="button-primary button1" id="1" onClick="weekSelect(this.id)">Week 1</button>
         <button class="button button2" id="2" onClick="weekSelect(this.id)">Week 2</button>
         <button class="button button3" id="3" onClick="weekSelect(this.id)">Week 3</button>
         <button class="button button4" id="4" onClick="weekSelect(this.id)">Week 4</button>
-        <button class="button button5" id="5" onClick="weekSelect(this.id)">Week 5</button>
+        <button class="button button5" id="5" onClick="weekSelect(this.id)">Week 5</button> -->
 
         <div class="row">
           <div class="one-half column">
@@ -89,13 +97,20 @@
 
         <div class="cluster">
             <button class="reset" style='margin-left: 8%;'>Reset Zoom</button>
-            <button class='button' style='border: none;'>Cluster annotation:<sup><a href='#fn1' id='ref1'>1</a></sup></button>
+            <button class='button' style='border: none;'>Cluster annotation:<sup><a href='#fn4' id='ref4' style="text-decoration:none;"> 4</a></sup></button>
             <i>
                 Hover over a cluster.
             </i>
         </div>
 
     <br /><br />
+
+              <b>Note:</b> <i>This visualisation is interactive. You can navigate and zoom through the latent space.
+              Hovering over a point will reveal the name of the presented source, and the proposed
+              annotation of the cluster it belongs to. For details on how these clusters were formed,
+              please refer to the paper.</i>
+
+
 
         <!-- <div class="row">
             <div class="one columns" >
@@ -202,7 +217,29 @@
 
 
 
-              <hr></hr><sup id="fn1">1. <i>Disclaimer:</i> These annotations were manually generated, and are superficial: they do not act as qualifiers but rather as common observable characteristics. <a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup>
+              <hr></hr>
+              <sup id="fn1">1.</sup> <i>Ecole Polytechnique Fédérale de Lausanne (EPFL) </i>
+                  <a href="https://dtsbourg.github.io" target="_blank" style="color: #222;"> Contact </a>
+                   <a href="#ref1" title="">↩</a>
+               <br /><br />
+
+               <sup id="fn2">2.</sup> <i>Ecole Polytechnique Fédérale de Lausanne (EPFL) </i>
+               <a href="https://www.semanticscholar.org/author/J%C3%A9r%C3%A9mie-Rappaz/8835033" target="_blank" style="color: #222;"> Contact </a>
+
+                    <a href="#ref2" title="">↩</a>
+                <br /><br />
+
+                <sup id="fn3">3.</sup> <i>Ecole Polytechnique Fédérale de Lausanne (EPFL) </i>
+                 <a href="http://lsir.epfl.ch/aberer/" target="_blank" style="color: #222;"> Contact </a>
+
+                     <a href="#ref3" title="">↩</a>
+                 <br /><br />
+
+              <sup id="fn4">4. </sup><i>Disclaimer:</i> These annotations were manually
+                  generated, and are superficial: they do not act as qualifiers but
+                  rather as common observable characteristics. <a href="#ref4" title="">↩</a>
+
+            <br /><br />
 <br /><br /><br />
       </div>
 
@@ -210,5 +247,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.7/d3-tip.js">	 </script>
     <script src="clusters.js" charset="utf-8"></script>
     <script src="scatter.js" charset="utf-8"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   </body>
 </html>
